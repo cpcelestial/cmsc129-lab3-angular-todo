@@ -1,0 +1,63 @@
+.task {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.task h3 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.task-done {
+    background-color: lightblue;
+}
+
+.task-done h3,
+.task-done p {
+    background-color: lightblue;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.checkbox {
+    width: fit-content;
+    padding-right: 15px;
+    margin: auto 0;
+}
+
+#done {
+    transform: scale(1.5);
+    accent-color: black;
+}
+
+.text {
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+}
+
+.subtext {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+fa-icon,
+input {
+    cursor: pointer;
+}

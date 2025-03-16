@@ -1,0 +1,21 @@
+<div [ngClass]="task.done ? 'task-done' : ''" class="task">
+    <div class="checkbox">
+        <input type="checkbox" [checked]="task.done" id="done" (change)="onToggle(task)" />
+    </div>
+    <div class="text">
+        <h3>
+            {{ task.text }}
+            <div class="icons">
+                <fa-icon (click)="onEdit(task)" [ngStyle]="{'color': 'black', 'transform': 'scale(0.85)'}"
+                    [icon]="faEdit"></fa-icon>
+                <fa-icon (click)="onDelete(task)" [ngStyle]="{'color': 'maroon', 'transform': 'scale(1.1)'}"
+                    [icon]="faTimes">
+                </fa-icon>
+            </div>
+        </h3>
+        <div class="subtext">
+            <p>{{ formatDateTime(task.day) }}</p>
+            <app-tag text="{{ task.priority }}"></app-tag>
+        </div>
+    </div>
+</div>

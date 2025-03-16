@@ -1,0 +1,23 @@
+<form *ngIf="showEditTask" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="edit-text">Task</label>
+        <input type="text" name="text" [(ngModel)]="text" id="edit-text" placeholder="Add Task" autocomplete="off" />
+    </div>
+    <div class="form-control">
+        <label for="edit-day">Day & Time</label>
+        <input type="datetime-local" name="day" [(ngModel)]="day" id="edit-day" />
+    </div>
+    <div class="form-radio">
+        <label class="priority">Priority</label>
+        <input type="radio" name="priority" [(ngModel)]="priority" id="edit-high" value="high">
+        <label for="edit-high">High</label>
+        <input type="radio" name="priority" [(ngModel)]="priority" id="edit-medium" value="medium">
+        <label for="edit-medium">Medium</label>
+        <input type="radio" name="priority" [(ngModel)]="priority" id="edit-low" value="low">
+        <label for="edit-low">Low</label>
+    </div>
+    <div style="display: flex;">
+        <app-button color="black" text="Cancel" (btnClick)="cancelEdit()"></app-button>
+        <input type="submit" value="Update Task" class="btn btn-block" />
+    </div>
+</form>

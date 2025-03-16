@@ -1,0 +1,20 @@
+<form *ngIf="showAddTask" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="add-text">Task</label>
+        <input type="text" name="text" [(ngModel)]="text" id="add-text" placeholder="Add Task" autocomplete="off" />
+    </div>
+    <div class="form-control">
+        <label for="add-day">Day & Time</label>
+        <input type="datetime-local" name="day" [(ngModel)]="day" id="add-day" />
+    </div>
+    <div class="form-radio">
+        <label class="priority">Priority</label>
+        <input type="radio" name="priority" [(ngModel)]="priority" id="add-high" value="high">
+        <label for="add-high">High</label>
+        <input type="radio" name="priority" [(ngModel)]="priority" id="add-medium" value="medium">
+        <label for="add-medium">Medium</label>
+        <input type="radio" name="priority" [(ngModel)]="priority" id="add-low" value="low">
+        <label for="add-low">Low</label>
+    </div>
+    <input type="submit" value="Save Task" class="btn btn-block" />
+</form>

@@ -1,27 +1,44 @@
-# MyToDo
+# To Do List Web Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.12.
+A simple and intuitive task management tool built with Angular. This application allows users to create, edit, and manage tasks efficiently.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **User-Friendly Interface:** Easy navigation for managing tasks.
+- **Task Creation:** Quickly add new tasks with details.
+- **Task Management:** Edit, delete, and mark tasks as done or not.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular:** A robust framework for building dynamic web applications.
+- **TypeScript:** A superset of JavaScript that provides static typing.
+- **Vite:** A modern build tool for enhanced development speed and performance.
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To get a local copy up and running, follow these steps:
 
-## Running unit tests
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/my-to-do.git
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Navigate to the project directory:**
+   ```bash
+   cd my-to-do
+   ```
 
-## Running end-to-end tests
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. **Run the database server:**
+   ```bash
+   npm run server
+   ```

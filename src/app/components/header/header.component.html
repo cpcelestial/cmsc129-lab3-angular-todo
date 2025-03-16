@@ -1,0 +1,8 @@
+<header>
+    <h1>{{ title }}</h1>
+    <div>
+        <app-sort-task [sortOption]="sortOption" (sortChange)="onSortChange($event)"></app-sort-task>
+        <app-button color="{{ showAddTask ? 'black' : '' }}" text="{{ showAddTask ? 'Close' : 'Add' }}"
+            (btnClick)="toggleAddTask()"></app-button>
+    </div>
+</header>

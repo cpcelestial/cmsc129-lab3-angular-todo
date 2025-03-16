@@ -1,0 +1,8 @@
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<app-edit-task [taskToEdit]="taskToEdit" (onEditTask)="editTask($event)"></app-edit-task>
+<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="onDialog(task)"
+    (onToggleDone)="toggleDone(task)" (onEditTask)="onEditTask(task)"></app-task-item>
+<div *ngIf="showDialog" class="backdrop">
+    <app-dialog (confirm)="onConfirm($event)"></app-dialog>
+</div>
+<app-toast></app-toast>
