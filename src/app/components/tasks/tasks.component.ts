@@ -67,8 +67,10 @@ export class TasksComponent implements OnInit {
   }
 
   addTask(task: Task) {
-    this.taskService.addTask(task).subscribe((task) => (this.tasks.push(task)));
-    this.sortTasks();
+    this.taskService.addTask(task).subscribe((task) => {
+      this.tasks.push(task)
+      this.sortTasks();
+    });
   }
 
   onEditTask(task: Task) {
@@ -82,8 +84,8 @@ export class TasksComponent implements OnInit {
         this.tasks[index] = task;
       }
       this.taskToEdit = null;
+      this.sortTasks();
     });
-    this.sortTasks();
   }
 
   onDialog(task: Task) {
@@ -104,7 +106,9 @@ export class TasksComponent implements OnInit {
   }
 
   undoDelete(task: Task) {
-    this.taskService.addTask(task).subscribe((task) => (this.tasks.push(task)));
-    this.sortTasks();
+    this.taskService.addTask(task).subscribe((task) => {
+      this.tasks.push(task)
+      this.sortTasks();
+    });
   }
 }
