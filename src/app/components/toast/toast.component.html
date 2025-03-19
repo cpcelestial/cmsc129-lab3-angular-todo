@@ -1,7 +1,8 @@
 <div class="toast-container">
     <div *ngFor="let toast of toasts" class="toast" [ngClass]="'toast-' + toast.type" [@toastAnimation]="'visible'">
         <div class="toast-content">
-            <span class="toast-icon" [ngClass]="getIconClass(toast.type)"></span>
+            <fa-icon [icon]="getToastIcon(toast.type)" [styles]="{'color': getIconColor(toast.type)}"
+                class="toast-icon"></fa-icon>
             <span class="toast-message">{{ toast.message }}</span>
         </div>
         <div class="toast-actions">
@@ -10,7 +11,7 @@
             </button>
             <button class="toast-dismiss" (click)="dismiss(toast.id)">
                 <span class="sr-only">Dismiss</span>
-                <span class="toast-dismiss-icon">×</span>
+                <fa-icon [icon]="faXmark" class="toast-dismiss-icon" size="xs"></fa-icon>
             </button>
         </div>
     </div>

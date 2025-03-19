@@ -1,22 +1,6 @@
 {
   "tasks": [
     {
-      "text": "Doctors Appointment",
-      "day": "2025-08-19T13:00",
-      "priority": "high",
-      "done": false,
-      "id": "0390",
-      "dateAdded": "2025-03-15T16:23:57.985Z"
-    },
-    {
-      "text": "Lab Defense",
-      "day": "2025-03-04T16:00",
-      "priority": "high",
-      "done": false,
-      "id": "ac1e",
-      "dateAdded": "2025-03-15T16:24:57.985Z"
-    },
-    {
       "id": "8657",
       "text": "Meeting at School",
       "day": "2025-05-13T14:00",
@@ -39,6 +23,14 @@
       "done": false,
       "id": "263c",
       "dateAdded": "2025-03-17T06:18:11.993Z"
+    },
+    {
+      "id": "ac1e",
+      "text": "Lab Defense",
+      "day": "2025-03-04T16:00",
+      "priority": "high",
+      "done": false,
+      "dateAdded": "2025-03-15T16:24:57.985Z"
     }
   ]
 }
