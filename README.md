@@ -12,7 +12,6 @@ A simple and intuitive task management tool built with Angular. This application
 
 - **Angular:** A robust framework for building dynamic web applications.
 - **TypeScript:** A superset of JavaScript that provides static typing.
-- **Vite:** A modern build tool for enhanced development speed and performance.
 
 ## Getting Started
 
